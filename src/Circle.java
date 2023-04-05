@@ -44,7 +44,7 @@ public class Circle extends Ellipse{
     //simple override of the toString() method in the Object class
     @Override
     public String toString() {
-        return "Circle: Ellipse" +
+        return "Shape: Circle" +
                 "\nArea: " + getArea() +
                 "\nPerimeter: " + getPerimeter();
     }
