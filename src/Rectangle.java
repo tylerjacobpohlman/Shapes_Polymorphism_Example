@@ -1,7 +1,7 @@
 /**
  * @author Tyler Pohlman
- * @version 1.0
- * @since 04/04/2023
+ * @version 1.1
+ * @since 04/05/2023
  */
 public class Rectangle extends Shape{
     /**
@@ -38,11 +38,11 @@ public class Rectangle extends Shape{
         return height * width;
     }
 
+    //simple override of the toString() method in the Object class
     @Override
     public String toString() {
-        return "Rectangle{" +
-                "height=" + height +
-                ", width=" + width +
-                '}';
+        return "Shape: Circle" +
+                "\nArea: " + getArea() +
+                "\nPerimeter: " + getPerimeter();
     }
 }

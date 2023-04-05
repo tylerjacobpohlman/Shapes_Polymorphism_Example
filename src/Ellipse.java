@@ -1,7 +1,7 @@
 /**
  * @author Tyler Pohlman
- * @version 1.0
- * @since 04/04/2023
+ * @version 1.1
+ * @since 04/05/2023
  */
 public class Ellipse extends Shape {
     /**
@@ -35,5 +35,13 @@ public class Ellipse extends Shape {
     @Override
     public double getArea() {
         return Math.PI * height * width;
+    }
+
+    //simple override of the toString() method in the Object class
+    @Override
+    public String toString() {
+        return "Shape: Ellipse" +
+                "\nArea: " + getArea() +
+                "\nPerimeter: " + getPerimeter();
     }
 }

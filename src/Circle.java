@@ -1,7 +1,7 @@
 /**
  * @author Tyler Pohlman
- * @version 1.0
- * @since 04/04/2023
+ * @version 1.1
+ * @since 04/05/2023
  */
 public class Circle extends Ellipse{
     /**
@@ -20,6 +20,10 @@ public class Circle extends Ellipse{
 
 
     /**
+     * NOTE: Unlike the Square class, the circle class overrides the methods getPerimeter() and getArea() form the Ellipse class.
+     */
+
+    /**
      * Returns the perimeter of the circle.
      * @return double
      */
@@ -35,6 +39,14 @@ public class Circle extends Ellipse{
     @Override
     public double getArea() {
         return Math.PI * height * height;
+    }
+
+    //simple override of the toString() method in the Object class
+    @Override
+    public String toString() {
+        return "Circle: Ellipse" +
+                "\nArea: " + getArea() +
+                "\nPerimeter: " + getPerimeter();
     }
 
 }

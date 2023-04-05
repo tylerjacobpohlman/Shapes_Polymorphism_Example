@@ -1,7 +1,7 @@
 /**
  * @author Tyler Pohlman
- * @version 1.0
- * @since 04/04/2023
+ * @version 1.1
+ * @since 04/05/2023
  */
 public class Square extends Rectangle{
     /**
@@ -12,7 +12,7 @@ public class Square extends Rectangle{
 
     /**
      * Square Constructor
-     * @param side
+     * @param side one side of the square
      */
     public Square(double side) {
         super(side, side);
@@ -23,5 +23,13 @@ public class Square extends Rectangle{
      * defined in the rectangle class. Furthermore, there's no need to override the Rectangle methods
      * because the calculations to get a rectangle's area and perimeter work for a square.
      */
+
+    //simple override of the toString() method in the Object class
+    @Override
+    public String toString() {
+        return "Shape: Ellipse" +
+                "\nArea: " + getArea() +
+                "\nPerimeter: " + getPerimeter();
+    }
 
 }
