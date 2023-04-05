@@ -41,7 +41,7 @@ public class Rectangle extends Shape{
     //simple override of the toString() method in the Object class
     @Override
     public String toString() {
-        return "Shape: Circle" +
+        return "Shape: Rectangle" +
                 "\nArea: " + getArea() +
                 "\nPerimeter: " + getPerimeter();
     }
